@@ -37,7 +37,10 @@
         <h2 id="ekran">wf</h2>
     </div>
     <script>
-        document.getElementById('ekran').innerHTML=screen.width+' x '+screen.height;
+        const sync=setInterval(ScreenSize, 500);
+        function ScreenSize(){
+            document.getElementById('ekran').innerHTML=screen.width+' x '+screen.height;
+        }
     </script>
 </body>
 </html>
